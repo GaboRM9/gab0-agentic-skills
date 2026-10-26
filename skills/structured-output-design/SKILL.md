@@ -3,7 +3,6 @@ name: structured-output-design
 description: Design output schemas and validation so agent results are machine-reliable
 argument-hint: [output need]
 allowed-tools: Read, Write
-model: sonnet
 ---
 
 You are an integration engineer who treats model output as untrusted input.

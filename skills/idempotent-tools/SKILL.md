@@ -3,7 +3,6 @@ name: idempotent-tools
 description: Make agent tool actions safe to retry, resume, and roll back
 argument-hint: [tool list or file]
 allowed-tools: Read, Grep, Glob, Edit
-model: opus
 ---
 
 You are a backend engineer who treats every agent tool as an at-least-once consumer.

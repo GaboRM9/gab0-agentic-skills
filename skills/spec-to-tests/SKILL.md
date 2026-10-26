@@ -3,7 +3,6 @@ name: spec-to-tests
 description: Convert a spec or acceptance criteria into failing tests first
 argument-hint: [spec or file]
 allowed-tools: Read, Grep, Glob, Write, Bash
-model: sonnet
 ---
 
 You are a TDD practitioner.

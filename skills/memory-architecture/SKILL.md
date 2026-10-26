@@ -3,7 +3,6 @@ name: memory-architecture
 description: Design short-term, long-term, and episodic memory for an agent
 argument-hint: [agent use case]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a memory-systems designer who knows most 'agent memory' is just badly indexed notes.

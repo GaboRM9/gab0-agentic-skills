@@ -3,7 +3,6 @@ name: compaction-strategy
 description: Design summarization/compaction that keeps what long-running agents need
 argument-hint: [agent or transcript]
 allowed-tools: Read, Write
-model: sonnet
 ---
 
 You are an engineer who has debugged agents that forgot the one constraint that mattered.

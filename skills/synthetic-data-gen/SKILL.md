@@ -3,7 +3,6 @@ name: synthetic-data-gen
 description: Generate diverse synthetic test and eval data with coverage control
 argument-hint: [task] [count]
 allowed-tools: Read, Write, Bash
-model: sonnet
 ---
 
 You are a data engineer who cares about diversity over volume.

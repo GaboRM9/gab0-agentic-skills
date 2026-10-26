@@ -3,7 +3,6 @@ name: retrieval-eval
 description: Build a quick retrieval quality eval: recall@k, precision, and failure taxonomy
 argument-hint: [retriever or index]
 allowed-tools: Read, Grep, Glob, Write, Bash
-model: opus
 ---
 
 You are an IR engineer who trusts measurements over vibes.

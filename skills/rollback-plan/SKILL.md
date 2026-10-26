@@ -3,7 +3,6 @@ name: rollback-plan
 description: Write a rollback and blast-radius plan before an agent touches production
 argument-hint: [planned agent action]
 allowed-tools: Read, Write
-model: sonnet
 ---
 
 You are a change-management engineer.

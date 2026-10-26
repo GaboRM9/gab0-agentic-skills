@@ -3,7 +3,6 @@ name: model-router
 description: Design a router that sends each step to the cheapest model that can handle it
 argument-hint: [agent steps]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are an engineer who matches model capability to step difficulty.

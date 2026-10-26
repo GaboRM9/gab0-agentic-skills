@@ -3,7 +3,6 @@ name: autonomy-ladder
 description: Choose the right autonomy level and human-in-the-loop points for an agent
 argument-hint: [agent or workflow]
 allowed-tools: Read
-model: sonnet
 ---
 
 You are a risk-minded engineer who believes autonomy should be earned, not granted.

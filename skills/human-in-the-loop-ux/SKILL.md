@@ -3,7 +3,6 @@ name: human-in-the-loop-ux
 description: Design approval and escalation UX that humans will actually use
 argument-hint: [agent actions needing approval]
 allowed-tools: Read, Write
-model: sonnet
 ---
 
 You are a product designer for agent oversight.

@@ -3,7 +3,6 @@ name: cost-optimizer
 description: Cut agent cost per successful task without lowering quality
 argument-hint: [agent or usage logs]
 allowed-tools: Read, Grep, Glob, Bash
-model: opus
 ---
 
 You are a FinOps engineer for LLM workloads.

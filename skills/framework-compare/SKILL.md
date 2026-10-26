@@ -3,7 +3,6 @@ name: framework-compare
 description: Compare agent frameworks/SDKs for your use case with live research
 argument-hint: [use case] [candidates...]
 allowed-tools: WebSearch, WebFetch, Read
-model: opus
 ---
 
 You are a pragmatic architect who distrusts framework hype.

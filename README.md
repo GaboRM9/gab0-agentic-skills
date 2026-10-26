@@ -1,62 +1,50 @@
 # gab0-agentic-skills
 
-> A toolkit of AI-powered Claude Code slash commands — built for real-world use.
+> My personal toolkit of agentic engineering skills: reusable prompts for designing, building, evaluating, and operating AI agents.
 
-Claude Code supports custom slash commands (skills) that give Claude a focused persona, live tools, and a structured output format. This is a public collection of skills built and used daily.
+Each skill is a self-contained markdown prompt with a focused persona, a declared tool set, and a fixed output format. Invoke one as a slash command in any agent harness that loads markdown skills/commands.
 
 ---
 
 ## Quick Install
 
+Copy the skills you want into your agent's skills/commands directory:
+
 ```bash
-cp skills/forecast/SKILL.md ~/.claude/commands/forecast.md
+SKILLS_DIR=<your-skills-dir>
+for d in skills/*/; do n=$(basename "$d"); cp "$d/SKILL.md" "$SKILLS_DIR/$n.md"; done
 ```
 
-Then in any Claude Code session:
+Then invoke by name:
 ```
 /forecast "1 month" "OpenAI"
-/forecast "Real Madrid"
-/forecast "3 months" "K-pop"
+/agent-spec "support triage agent"
+/failure-modes "./agents/refund-bot"
 ```
 
 ---
 
 ## Skills
 
-| Skill | Invocation | What it does |
-|-------|-----------|--------------|
-| [/forecast](./skills/forecast/README.md) | `/forecast "[time-horizon]" "[topic]"` | Oracle-style prediction for any topic — runs 10 adaptive live searches, builds a topic profile, finds the historical parallel, delivers falsifiable predictions with causal chains |
-
-**+50 agentic engineering skills** (design, context, reliability, evals, workflow, harness, ops, research): see [skills/AGENTIC.md](./skills/AGENTIC.md).
+- **[Agentic engineering (50 skills)](./skills/AGENTIC.md)**: design, context, reliability, evals, workflow, harness, ops, research.
+- **[/forecast](./skills/forecast/README.md)**: `/forecast "[time-horizon]" "[topic]"`. Oracle-style prediction for any topic using adaptive live searches, a historical parallel, and falsifiable predictions with causal chains.
 
 ---
 
-## What kind of topics?
+## Skill format
 
-Anything. The skill builds the right research strategy per topic instead of applying the same template to everything.
+Each skill is `skills/<name>/SKILL.md`:
 
-```
-/forecast "1 month" "OpenAI"              # tech
-/forecast "3 months" "Brazilian elections"  # politics
-/forecast "1 season" "anime spring 2026"  # culture
-/forecast "1 month" "Real Madrid"         # sports
-/forecast "1 year" "coral reef bleaching" # science
-/forecast "3 months" "K-pop"              # entertainment
-/forecast "2 weeks" "crypto market"       # finance
-/forecast "5 years" "nuclear energy"      # long-range
-/forecast "1 month" "Joe Rogan"           # just curious
-```
-
+```markdown
+---
+name: skill-name
+description: One-line description (used for routing and help)
+argument-hint: [arg1] [arg2]
+allowed-tools: Read, Grep, Glob
 ---
 
-## How Skills Work
-
-Each skill is a `.md` file in `~/.claude/commands/`. When you type `/skill-name` in Claude Code, the file loads as a system prompt and Claude executes it with access to the declared tools.
-
-**Argument syntax** — positional, 0-based:
-- `$0` — first argument
-- `$1` — second argument
-- `$ARGUMENTS` — all arguments as a single string
+Prompt body. Use $ARGUMENTS for the full input, or $0, $1 for positional (0-based) arguments.
+```
 
 ---
 
@@ -64,14 +52,11 @@ Each skill is a `.md` file in `~/.claude/commands/`. When you type `/skill-name`
 
 ```
 gab0-agentic-skills/
-├── .claude/
-│   └── CLAUDE.md              # Claude's instructions for this repo
+├── AGENTS.md          # Instructions for agents working in this repo
 ├── skills/
-│   └── forecast/
-│       ├── SKILL.md           # The skill prompt
-│       ├── README.md          # Full documentation
-│       └── examples/
-│           └── sample-output.md
+│   ├── AGENTIC.md     # Index of the agentic engineering skills
+│   ├── forecast/      # SKILL.md, README.md, examples/
+│   └── <name>/SKILL.md
 ├── README.md
 ├── CONTRIBUTING.md
 └── LICENSE
@@ -82,13 +67,6 @@ gab0-agentic-skills/
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) to add a skill.
-
----
-
-## Resources
-
-- [Claude Code Docs](https://docs.anthropic.com/en/docs/claude-code)
-- [Custom Slash Commands](https://docs.anthropic.com/en/docs/claude-code/slash-commands)
 
 ---
 

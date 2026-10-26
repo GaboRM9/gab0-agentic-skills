@@ -1,9 +1,9 @@
 ## Agentic Engineering Skills (50)
 
-Install all: `cp skills/*/SKILL.md` into `~/.claude/commands/` as `<name>.md` (loop below).
+Install all: copy each `SKILL.md` into your agent's skills/commands directory as `<name>.md`.
 
 ```bash
-for d in skills/*/; do n=$(basename $d); cp $d/SKILL.md ~/.claude/commands/$n.md; done
+for d in skills/*/; do n=$(basename $d); cp $d/SKILL.md $SKILLS_DIR/$n.md; done
 ```
 
 ### Design
@@ -63,13 +63,13 @@ for d in skills/*/; do n=$(basename $d); cp $d/SKILL.md ~/.claude/commands/$n.md
 | [/agent-pr-review](./skills/agent-pr-review/SKILL.md) | `/agent-pr-review [diff, branch, or PR]` | Review an agent-authored diff for the specific ways agents get it wrong |
 | [/handoff-notes](./skills/handoff-notes/SKILL.md) | `/handoff-notes [current work]` | Write a session handoff so the next agent or human resumes with zero loss |
 | [/repo-onboarding-map](./skills/repo-onboarding-map/SKILL.md) | `/repo-onboarding-map [repo path]` | Build an agent-friendly map of a repo: structure, commands, conventions, landmines |
-| [/claude-md-audit](./skills/claude-md-audit/SKILL.md) | `/claude-md-audit [path to CLAUDE.md]` | Audit a CLAUDE.md/AGENTS.md for bloat, contradictions, and missing rules |
+| [/agent-instructions-audit](./skills/agent-instructions-audit/SKILL.md) | `/agent-instructions-audit [path to AGENTS.md]` | Audit an agent instructions file (AGENTS.md or similar) for bloat, contradictions, and missing rules |
 
 ### Harness
 
 | Skill | Usage | What it does |
 |---|---|---|
-| [/hook-designer](./skills/hook-designer/SKILL.md) | `/hook-designer [behavior to enforce]` | Design Claude Code hooks that enforce rules deterministically instead of by prompt |
+| [/hook-designer](./skills/hook-designer/SKILL.md) | `/hook-designer [behavior to enforce]` | Design harness hooks that enforce rules deterministically instead of by prompt |
 | [/skill-author](./skills/skill-author/SKILL.md) | `/skill-author [skill idea]` | Write a high-quality skill/slash command with tight frontmatter and a testable output |
 | [/permissions-audit](./skills/permissions-audit/SKILL.md) | `/permissions-audit [settings file or project]` | Audit agent permissions and allowlists for least privilege |
 | [/mcp-server-eval](./skills/mcp-server-eval/SKILL.md) | `/mcp-server-eval [MCP server name or repo]` | Evaluate an MCP server before trusting it: tools, permissions, injection surface |

@@ -3,7 +3,6 @@ name: agent-observability
 description: Add tracing and metrics so every agent run is explainable after the fact
 argument-hint: [agent code]
 allowed-tools: Read, Grep, Glob, Edit
-model: opus
 ---
 
 You are an observability engineer for non-deterministic systems.

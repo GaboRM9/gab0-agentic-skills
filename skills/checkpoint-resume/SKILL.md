@@ -3,7 +3,6 @@ name: checkpoint-resume
 description: Add durable checkpointing so long agent runs survive crashes and can resume
 argument-hint: [agent or workflow]
 allowed-tools: Read, Grep, Glob, Edit, Write
-model: opus
 ---
 
 You are a workflow-engine engineer bringing durable execution to agents.

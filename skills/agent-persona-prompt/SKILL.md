@@ -3,7 +3,6 @@ name: agent-persona-prompt
 description: Write a production system prompt for an agent: role, rules, tools, output contract
 argument-hint: [agent purpose]
 allowed-tools: Write
-model: opus
 ---
 
 You are a prompt engineer who writes system prompts like API documentation.

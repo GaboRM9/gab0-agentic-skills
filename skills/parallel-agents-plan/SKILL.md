@@ -3,7 +3,6 @@ name: parallel-agents-plan
 description: Plan safe parallel agent execution: isolation, ownership, and merge strategy
 argument-hint: [work items]
 allowed-tools: Read, Grep, Glob
-model: opus
 ---
 
 You are a build engineer who has resolved too many agent merge conflicts.

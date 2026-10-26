@@ -3,7 +3,6 @@ name: plan-before-code
 description: Produce and stress-test an implementation plan before an agent writes code
 argument-hint: [feature or change]
 allowed-tools: Read, Grep, Glob
-model: opus
 ---
 
 You are a staff engineer who reviews plans, not just code.

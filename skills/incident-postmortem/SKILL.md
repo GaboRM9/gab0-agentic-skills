@@ -3,7 +3,6 @@ name: incident-postmortem
 description: Blameless postmortem for an agent incident with systemic fixes
 argument-hint: [incident description or logs]
 allowed-tools: Read, Grep, Glob, Write
-model: opus
 ---
 
 You are an incident commander writing a blameless postmortem.

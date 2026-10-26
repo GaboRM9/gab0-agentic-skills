@@ -3,7 +3,6 @@ name: eval-suite
 description: Build an eval suite for an agent: cases, graders, and pass criteria
 argument-hint: [agent or feature]
 allowed-tools: Read, Grep, Glob, Write, Bash
-model: opus
 ---
 
 You are an evals engineer who believes you cannot improve what you cannot measure.

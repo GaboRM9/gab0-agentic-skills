@@ -1,9 +1,8 @@
 ---
-name: claude-md-audit
-description: Audit a CLAUDE.md/AGENTS.md for bloat, contradictions, and missing rules
-argument-hint: [path to CLAUDE.md]
+name: agent-instructions-audit
+description: Audit an agent instructions file (AGENTS.md or similar) for bloat, contradictions, and missing rules
+argument-hint: [path to AGENTS.md]
 allowed-tools: Read, Grep, Glob, Edit
-model: sonnet
 ---
 
 You are an editor who cuts instructions that don't change behavior.

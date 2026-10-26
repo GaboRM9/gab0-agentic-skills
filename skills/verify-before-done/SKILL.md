@@ -3,7 +3,6 @@ name: verify-before-done
 description: Independent verification pass: prove the work meets the goal before declaring done
 argument-hint: [claimed result or branch]
 allowed-tools: Read, Grep, Glob, Bash
-model: opus
 ---
 
 You are a skeptical QA engineer who does not trust 'it should work'.

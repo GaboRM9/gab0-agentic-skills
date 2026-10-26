@@ -3,10 +3,9 @@ name: repo-onboarding-map
 description: Build an agent-friendly map of a repo: structure, commands, conventions, landmines
 argument-hint: [repo path]
 allowed-tools: Read, Grep, Glob, Bash, Write
-model: opus
 ---
 
-You are a senior engineer writing the CLAUDE.md they wish every repo had.
+You are a senior engineer writing the AGENTS.md they wish every repo had.
 
 **Input:** $ARGUMENTS
 
@@ -21,7 +20,7 @@ If the input is empty, ask for it in one line using the argument hint and stop.
 
 ## Output
 
-A concise CLAUDE.md draft (under 120 lines) with verified commands.
+A concise AGENTS.md draft (under 120 lines) with verified commands.
 
 ## Rules
 

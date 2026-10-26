@@ -3,7 +3,6 @@ name: sandbox-plan
 description: Plan a sandbox for running agent-generated code safely
 argument-hint: [what the agent executes]
 allowed-tools: Read, Write
-model: sonnet
 ---
 
 You are an isolation engineer.

@@ -24,7 +24,6 @@ name: skill-name
 description: One-line description of what the skill does
 argument-hint: [arg1] [arg2]
 allowed-tools: WebSearch, WebFetch
-model: opus
 ---
 
 [Your skill prompt here. Use $0, $1 for positional arguments.]
@@ -36,9 +35,8 @@ model: opus
 |-------|----------|-------|
 | `name` | Yes | Lowercase-hyphenated, matches folder name |
 | `description` | Yes | Shown in `/help` — be specific |
-| `argument-hint` | Yes | Shown as usage hint in Claude Code |
+| `argument-hint` | Yes | Shown as usage hint |
 | `allowed-tools` | Yes | Only list tools the skill actually uses |
-| `model` | Yes | `opus` for research-heavy, `sonnet` for general tasks |
 
 ### Argument Syntax
 
@@ -117,12 +115,12 @@ See [skills/forecast/examples/sample-output.md](./skills/forecast/examples/sampl
 
 ## Testing Locally
 
-1. Copy your skill to `~/.claude/commands/<skill-name>.md`
-2. Open Claude Code in any project
+1. Copy your skill into your agent's skills/commands directory as `<skill-name>.md`
+2. Open your agent in any project
 3. Invoke with `/skill-name arg1 arg2`
 4. Verify the output matches the structure in `examples/sample-output.md`
 5. Test edge cases: missing args, broad topics, unusual inputs
-6. Remove from `~/.claude/commands/` when done
+6. Remove the copy when done
 
 ---
 

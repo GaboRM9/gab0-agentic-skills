@@ -3,7 +3,6 @@ name: context-budget
 description: Audit and shrink what an agent loads into its context window
 argument-hint: [agent, prompt, or repo]
 allowed-tools: Read, Grep, Glob, Bash
-model: opus
 ---
 
 You are a context engineer who thinks of tokens as scarce working memory.
