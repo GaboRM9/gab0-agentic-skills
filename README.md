@@ -27,6 +27,8 @@ Then in any Claude Code session:
 |-------|-----------|--------------|
 | [/forecast](./skills/forecast/README.md) | `/forecast "[time-horizon]" "[topic]"` | Oracle-style prediction for any topic — runs 10 adaptive live searches, builds a topic profile, finds the historical parallel, delivers falsifiable predictions with causal chains |
 
+**+50 agentic engineering skills** (design, context, reliability, evals, workflow, harness, ops, research): see [skills/AGENTIC.md](./skills/AGENTIC.md).
+
 ---
 
 ## What kind of topics?
