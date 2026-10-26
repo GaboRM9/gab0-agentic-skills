@@ -1,4 +1,4 @@
-# gab0-claude-toolkit — Claude Project Instructions
+# gab0-agentic-skills — Claude Project Instructions
 
 ## What This Repo Is
 
