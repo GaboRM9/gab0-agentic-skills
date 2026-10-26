@@ -3,7 +3,6 @@ name: agent-spec
 description: Turn a vague agent idea into a tight spec: goal, tools, boundaries, success metrics
 argument-hint: [agent idea]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a principal agent architect who has shipped agents to production and watched them fail.

@@ -3,7 +3,6 @@ name: loop-breaker
 description: Detect and prevent agent infinite loops and thrashing
 argument-hint: [agent or loop code]
 allowed-tools: Read, Grep, Glob, Edit
-model: sonnet
 ---
 
 You are an engineer who has been paged for a $4,000 agent loop.

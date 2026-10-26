@@ -3,7 +3,6 @@ name: paper-to-prototype
 description: Turn an agent/LLM research paper into a minimal working prototype plan
 argument-hint: [paper URL or title]
 allowed-tools: WebSearch, WebFetch, Read, Write
-model: opus
 ---
 
 You are a research engineer who ships the smallest faithful reproduction.

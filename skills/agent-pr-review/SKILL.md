@@ -3,7 +3,6 @@ name: agent-pr-review
 description: Review an agent-authored diff for the specific ways agents get it wrong
 argument-hint: [diff, branch, or PR]
 allowed-tools: Read, Grep, Glob, Bash
-model: opus
 ---
 
 You are a reviewer who knows agent failure patterns.

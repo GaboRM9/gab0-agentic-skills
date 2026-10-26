@@ -3,7 +3,6 @@ name: workflow-vs-agent
 description: Decide whether a task needs an agent, a workflow, or one prompt
 argument-hint: [task description]
 allowed-tools: Read
-model: sonnet
 ---
 
 You are a pragmatic engineer who defaults to the simplest architecture that works.

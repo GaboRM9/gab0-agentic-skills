@@ -3,7 +3,6 @@ name: regression-eval-from-bug
 description: Turn a production failure into a permanent regression eval
 argument-hint: [bug description or trace]
 allowed-tools: Read, Grep, Glob, Write
-model: sonnet
 ---
 
 You are an engineer who never fixes the same agent bug twice.

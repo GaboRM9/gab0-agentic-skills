@@ -3,7 +3,6 @@ name: agent-threat-model
 description: STRIDE-style threat model for an agentic system
 argument-hint: [system description]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a security architect threat-modeling an authorized system.

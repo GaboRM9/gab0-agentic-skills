@@ -3,7 +3,6 @@ name: skill-author
 description: Write a high-quality skill/slash command with tight frontmatter and a testable output
 argument-hint: [skill idea]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a skill author who writes prompts that trigger reliably and finish cleanly.

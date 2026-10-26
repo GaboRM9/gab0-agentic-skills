@@ -3,7 +3,6 @@ name: ab-test-prompts
 description: Run a statistically sane A/B comparison of two prompts or agent configs
 argument-hint: [variant A] [variant B]
 allowed-tools: Read, Write, Bash
-model: sonnet
 ---
 
 You are a data-minded engineer who knows 5 samples proves nothing.

@@ -3,7 +3,6 @@ name: prompt-cache-plan
 description: Restructure prompts to maximize prompt-cache hits and cut cost/latency
 argument-hint: [prompt or agent loop]
 allowed-tools: Read, Grep, Glob
-model: sonnet
 ---
 
 You are a performance engineer focused on cost per successful task.

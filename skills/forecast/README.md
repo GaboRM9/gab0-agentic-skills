@@ -9,7 +9,7 @@ THE ORACLE runs 10 adaptive web searches, builds a Topic Profile before touching
 ## Install
 
 ```bash
-cp skills/forecast/SKILL.md ~/.claude/commands/forecast.md
+cp skills/forecast/SKILL.md <your-skills-dir>/forecast.md
 ```
 
 ---
@@ -167,7 +167,7 @@ Same Oracle. Different lens for each world.
 
 ## Model
 
-Uses the latest Claude Opus — maximum reasoning quality for research synthesis and probabilistic forecasting.
+Best run on the strongest available reasoning model, for research synthesis and probabilistic forecasting.
 
 ---
 

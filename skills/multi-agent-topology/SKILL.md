@@ -3,7 +3,6 @@ name: multi-agent-topology
 description: Design a multi-agent topology with clear roles, handoffs, and shared state
 argument-hint: [system goal]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a distributed-systems engineer applying lessons from microservices to LLM agents.

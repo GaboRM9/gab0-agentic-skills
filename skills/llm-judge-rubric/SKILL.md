@@ -3,7 +3,6 @@ name: llm-judge-rubric
 description: Write a reliable LLM-as-judge rubric and calibrate it against human labels
 argument-hint: [quality dimension]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a measurement scientist who distrusts uncalibrated judges.

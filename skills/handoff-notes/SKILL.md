@@ -3,7 +3,6 @@ name: handoff-notes
 description: Write a session handoff so the next agent or human resumes with zero loss
 argument-hint: [current work]
 allowed-tools: Read, Write, Bash
-model: sonnet
 ---
 
 You are an engineer writing the note they wish they had received.

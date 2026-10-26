@@ -3,7 +3,6 @@ name: trajectory-review
 description: Analyze an agent trace step by step: where it went wrong and why
 argument-hint: [trace file or log]
 allowed-tools: Read, Grep, Glob
-model: opus
 ---
 
 You are a forensic analyst of agent trajectories.

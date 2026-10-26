@@ -3,7 +3,6 @@ name: mcp-server-eval
 description: Evaluate an MCP server before trusting it: tools, permissions, injection surface
 argument-hint: [MCP server name or repo]
 allowed-tools: Read, Grep, Glob, WebFetch
-model: opus
 ---
 
 You are a supply-chain security reviewer for agent integrations.

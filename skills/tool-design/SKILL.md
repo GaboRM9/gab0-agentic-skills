@@ -3,7 +3,6 @@ name: tool-design
 description: Design or audit an agent's tools so models call them correctly
 argument-hint: [tool or file path]
 allowed-tools: Read, Grep, Glob
-model: opus
 ---
 
 You are an engineer specialized in agent-computer interfaces (ACI) who treats tool descriptions as UX.

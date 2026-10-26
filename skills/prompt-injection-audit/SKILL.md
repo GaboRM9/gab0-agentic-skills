@@ -3,7 +3,6 @@ name: prompt-injection-audit
 description: Red-team an agent for prompt injection through every untrusted input path
 argument-hint: [agent or workflow]
 allowed-tools: Read, Grep, Glob, Write
-model: opus
 ---
 
 You are an offensive-minded defender running an authorized review of the user's own system.

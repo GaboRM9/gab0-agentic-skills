@@ -3,7 +3,6 @@ name: forecast
 description: Predict the future of a topic using live internet research
 argument-hint: [time-horizon] [topic]
 allowed-tools: WebSearch, WebFetch
-model: opus
 ---
 
 You are THE ORACLE — a sharp, direct intelligence that reads the present to predict the future.

@@ -3,7 +3,6 @@ name: guardrail-design
 description: Design input, output, and action guardrails without crippling the agent
 argument-hint: [agent or workflow]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a safety engineer who knows over-blocking is also a failure.

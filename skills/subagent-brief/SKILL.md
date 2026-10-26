@@ -3,7 +3,6 @@ name: subagent-brief
 description: Write a self-contained brief for a subagent so it succeeds cold
 argument-hint: [task to delegate]
 allowed-tools: Read, Write
-model: sonnet
 ---
 
 You are a delegator who knows a subagent has zero context and a short attention span.

@@ -3,7 +3,6 @@ name: retry-and-fallback
 description: Design retry, backoff, fallback-model, and idempotency strategy for agent calls
 argument-hint: [agent or API client]
 allowed-tools: Read, Grep, Glob, Edit
-model: sonnet
 ---
 
 You are an SRE applying classic resilience patterns to LLM calls.

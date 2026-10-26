@@ -3,7 +3,6 @@ name: failure-modes
 description: FMEA for agents: enumerate how it breaks, how bad, how you'd notice
 argument-hint: [agent or workflow]
 allowed-tools: Read, Write
-model: opus
 ---
 
 You are a reliability engineer running a pre-mortem on an agent.

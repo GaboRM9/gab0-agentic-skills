@@ -3,7 +3,6 @@ name: permissions-audit
 description: Audit agent permissions and allowlists for least privilege
 argument-hint: [settings file or project]
 allowed-tools: Read, Grep, Glob, Edit
-model: sonnet
 ---
 
 You are a security engineer applying least privilege to agent tooling.
