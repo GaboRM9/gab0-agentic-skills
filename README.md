@@ -1,4 +1,4 @@
-# gab0-claude-toolkit
+# gab0-agentic-skills
 
 > A toolkit of AI-powered Claude Code slash commands — built for real-world use.
 
@@ -63,7 +63,7 @@ Each skill is a `.md` file in `~/.claude/commands/`. When you type `/skill-name`
 ## Repo Structure
 
 ```
-gab0-claude-toolkit/
+gab0-agentic-skills/
 ├── .claude/
 │   └── CLAUDE.md              # Claude's instructions for this repo
 ├── skills/
